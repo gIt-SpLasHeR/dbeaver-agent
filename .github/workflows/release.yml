@@ -4,6 +4,7 @@ on:
   push:
     tags:
       - 'v*'  # Trigger only when tags starting with 'v' are pushed
+  workflow_dispatch:
 
 jobs:
   build-and-release:
@@ -17,7 +18,7 @@ jobs:
         uses: actions/setup-java@v4
         with:
           distribution: 'temurin'
-          java-version: '23'
+          java-version: '21'
           cache: maven
 
       - name: Build with Maven
