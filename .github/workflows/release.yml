@@ -59,6 +59,6 @@ jobs:
             -Dpackaging=jar \
             -Dfile=release/dbeaver-agent-${{ steps.get_version.outputs.VERSION }}.jar \
             -DrepositoryId=github \
-            -Durl=https://maven.pkg.github.com/wgzhao/dbeaver-agent
+            -Durl=https://maven.pkg.github.com/gIt-SpLasHeR/dbeaver-agent
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
